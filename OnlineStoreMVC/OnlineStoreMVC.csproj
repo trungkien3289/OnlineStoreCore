@@ -576,13 +576,11 @@
     <Content Include="Content\font-awesome\4.3.0\css\font-awesome.min.css" />
     <Content Include="Content\font-awesome\4.3.0\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\html5shiv\3.7.2\html5shiv.min.js" />
-    <Content Include="Content\Images\Banners\3dd8c7443cc774ec714eb69a49ffb01369b9be1c_banner2.jpg" />
-    <Content Include="Content\Images\Banners\47f87d91a268e2f23b499c3cfc0dfc36a3c24f36_banner1.jpg" />
-    <Content Include="Content\Images\Banners\58a7f9e3eb536aac771af3579db25f9864bcc3db_banner3.jpg" />
+    <Content Include="Content\Images\Banners\karofi-banner.jpg" />
     <Content Include="Content\Images\Banners\faviorIcon.jpg" />
-    <Content Include="Content\Images\Banners\item_0_3a5665a553a21342177dc39236c79ab1338d49f6_slide1.jpg" />
-    <Content Include="Content\Images\Banners\item_0_de8f87bc1e4da3ee068cc6c6c076b2b7c8184e0a_banner4.jpg" />
-    <Content Include="Content\Images\Banners\thiet-ke-noi-that-phong-cach-co-dien.png" />
+    <Content Include="Content\Images\Banners\karofi-banner2.png" />
+    <Content Include="Content\Images\Banners\logo_thanhchung.png" />
+    <Content Include="Content\Images\Banners\paloma-banner.png" />
     <Content Include="Content\Images\Banners\XaviaLogo.jpg" />
     <Content Include="Content\Images\bx_loader.gif" />
     <Content Include="Content\Images\CMSNewsImages\item_0_21-3.jpg" />
@@ -1556,6 +1554,15 @@
     <Content Include="Content\plugins\zoom-image\jquery.elevateZoom-3.0.8.min.js" />
     <Content Include="Content\plugins\zoom-image\jquery.elevatezoom.js" />
     <Content Include="Content\response\1.4.2\respond.min.js" />
+    <Content Include="Content\webcss\animate.css" />
+    <Content Include="Content\webcss\bootstrap.min.css" />
+    <Content Include="Content\webcss\component.css" />
+    <Content Include="Content\webcss\default.css" />
+    <Content Include="Content\webcss\font-awesome.min.css" />
+    <Content Include="Content\webcss\main.css" />
+    <Content Include="Content\webcss\prettyPhoto.css" />
+    <Content Include="Content\webcss\price-range.css" />
+    <Content Include="Content\webcss\responsive.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -1777,6 +1784,15 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\Utility\common.js" />
+    <Content Include="Scripts\webjs\cbpHorizontalMenu.js" />
+    <Content Include="Scripts\webjs\contact.js" />
+    <Content Include="Scripts\webjs\gmaps.js" />
+    <Content Include="Scripts\webjs\html5shiv.js" />
+    <Content Include="Scripts\webjs\jquery.prettyPhoto.js" />
+    <Content Include="Scripts\webjs\jquery.scrollUp.min.js" />
+    <Content Include="Scripts\webjs\main.js" />
+    <Content Include="Scripts\webjs\modernizr.custom.js" />
+    <Content Include="Scripts\webjs\price-range.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Content\css\blockcart.css" />
     <Content Include="Content\css\blockcategories.css" />
@@ -1882,6 +1898,7 @@
     <Content Include="Scripts\js\wp-embed.min.js" />
     <Content Include="Scripts\js\wp-emoji-release.min.js" />
     <Content Include="Content\display-product\detail-product.css" />
+    <Content Include="Views\index.html" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>

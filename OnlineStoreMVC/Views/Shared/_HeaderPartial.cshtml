@@ -1,6 +1,6 @@
 ﻿@using Microsoft.AspNet.Identity
 
-<div class="header-container">
+@*<div class="header-container">
     <header id="header">
         <div class="nav">
             <div class="container">
@@ -12,22 +12,6 @@
                     </div>
                     <nav>
                         <ul id="header_links">
-                            @*<li id="header_link_home">
-                                <a class="active" href="/" title="home">Trang chủ</a>
-                            </li>
-                            <li id="header_link_contact">
-                                <a href="@Url.Action("About", "Home")" title="contact">Giới thiệu</a>
-                            </li>
-                            <li id="header_link_blog">
-                                <a href="@Url.Action("Index", "News", new { id = 1 })" title="news">Tin tức</a>
-                            </li>
-                            <li id="header_link_blog">
-                                <a href="@Url.Action("Index", "News", new { id = 5 })" title="blog">Blog</a>
-                            </li>
-                            <li id="header_link_contact">
-                                <a href="@Url.Action("Contact", "Home")" title="contact">Liên hệ</a>
-                            </li>*@
-
                             <li id="header_link_home">
                                 <a title="Địa chỉ"><span class="active glyphicon glyphicon-earphone" style="top:3px;margin-right:3px;" title="Điện thoại"></span><span style="font-size:18px;font-weight:600;font-family: initial;">0905 197 575</span></a>
                             </li>
@@ -111,30 +95,7 @@
                             <div class="crossseling"></div>
                         </div>
                         <div id="header-login">
-                            @*<div class="header_user_info">
-                                @if (Request.IsAuthenticated)
-                                {
-                                    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
-                                    {
-                                        @Html.AntiForgeryToken()
-
-                                        <ul class="nav navbar-nav navbar-right" style="margin-right: 0px !important;">
-                                            <li>
-                                                @Html.ActionLink("Xin chào " + User.Identity.GetUserName() + ", ", "ChangePassword", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
-                                            </li>
-                                            <li><a href="javascript:document.getElementById('logoutForm').submit()"><i class="glyphicon glyphicon-log-out"></i> Thoát</a></li>
-                                        </ul>
-                                    }
-                                }
-                                else
-                                {
-                                    <a href="/Account/Register">Đăng ký</a>
-                                    <span>|</span>
-                                    <a href="/Account/Login">Đăng nhập</a>
-                                }
-                            </div>*@
                         </div>
-                        
                         <div id="tmsearch" class="clearfix">
                             <div id="tmsearchbox">
                                 <input class="tm_search_query font-size-child-menu form-control ac_input" type="text" id="tm_search_query" name="search_query" placeholder="Bạn cần tìm gì?" value="" autocomplete="off">
@@ -164,12 +125,6 @@
                                             }
                                         </div>
                                     </li>
-                                    @*@foreach (var item in (IList<OnlineStore.Model.ViewModel.MenuView>)ViewBag.TopCategoryList)
-                                    {
-                                        <li class="top-level-menu-li tmmegamenu_item it_23637660">
-                                            <a class="it_23637660 top-level-menu-li-a tmmegamenu_item" href="@item.Url">@item.Name</a>
-                                        </li>
-                                    }*@
                                     <li class="top-level-menu-li tmmegamenu_item it_23637660">
                                         <a class="it_23637660 top-level-menu-li-a tmmegamenu_item" href="/" title="Trang chủ">Trang chủ</a>
                                     </li>
@@ -194,4 +149,299 @@
             </div>
         </div>
     </header>
-</div>
+</div>*@
+
+
+<header id="header" class="stick-header">
+    <!--header-->
+    <div class="header_top">
+        <!--header_top-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="contactinfo">
+                        <ul class="nav nav-pills">
+                            <li><a href="#"><i class="fa fa-phone"></i> 0905928777</a></li>
+                            <li><a href="#"><i class="fa fa-envelope"></i> dienmaythanhchung@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="social-icons pull-right">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--/header_top-->
+
+    <div class="header-middle">
+        <!--header-middle-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="logo pull-left">
+                        <a href="Home/Index"><img class="brand-logo-headerSecsion" src="~/Content/Images/Banners/logo_thanhchung.png" alt="Điện máy Thành Chung" /></a>
+                    </div>
+                </div>
+                <div class="col-sm-7">
+                    <div class="search-box">
+                        <span class="cover-txtsearchbox"><input class="txt-search" type="text" /></span>
+                        <a id="btn-search" class="search-button glyphicon glyphicon-search"></a>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="shop-menu pull-right">
+                        <ul class="nav navbar-nav">
+                            <li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>
+                            <li><a href="login.html"><i class="fa fa-lock"></i> Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--/header-middle-->
+
+    <div class="header-bottom">
+        <!--header-bottom-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    @*<div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="mainmenu pull-left">
+                            <ul class="nav navbar-nav collapse navbar-collapse">
+                                <li><a href="index.html" class="active">Bếp Gas</a></li>
+                                <li class="dropdown">
+                                    <a href="#">Bếp Gas<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="shop.html">Products</a></li>
+                                        <li><a href="product-details.html">Product Details</a></li>
+                                        <li><a href="checkout.html">Checkout</a></li>
+                                        <li><a href="cart.html">Cart</a></li>
+                                        <li><a href="login.html">Login</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#">Blog<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="blog.html">Blog List</a></li>
+                                        <li><a href="blog-single.html">Blog Single</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="404.html">404</a></li>
+                                <li><a href="contact-us.html">Contact</a></li>
+                            </ul>
+                        </div>*@
+                    <nav id="cbp-hrmenu" class="cbp-hrmenu">
+                        <ul>
+                            <li>
+                                <a href="#">Bếp Gas</a>
+                                <div class="cbp-hrsub">
+                                    <div class="cbp-hrsub-inner">
+                                        <div>
+                                            <h4>Vật Dụng Nhà Bếp</h4>
+                                            <ul>
+                                                <li><a href="#">Catch the Bullet</a></li>
+                                                <li><a href="#">Snoopydoo</a></li>
+                                                <li><a href="#">Fallen Angel</a></li>
+                                                <li><a href="#">Sui Maker</a></li>
+                                                <li><a href="#">Wave Master</a></li>
+                                                <li><a href="#">Golf Pro</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h4>Utilities</h4>
+                                            <ul>
+                                                <li><a href="#">Gadget Finder</a></li>
+                                                <li><a href="#">Green Tree Express</a></li>
+                                                <li><a href="#">Green Tree Pro</a></li>
+                                                <li><a href="#">Wobbler 3.0</a></li>
+                                                <li><a href="#">Coolkid</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h4>Education</h4>
+                                            <ul>
+                                                <li><a href="#">Learn Thai</a></li>
+                                                <li><a href="#">Math Genius</a></li>
+                                                <li><a href="#">Chemokid</a></li>
+                                            </ul>
+                                            <h4>Professionals</h4>
+                                            <ul>
+                                                <li><a href="#">Success 1.0</a></li>
+                                                <li><a href="#">Moneymaker</a></li>
+                                            </ul>
+                                        </div>
+                                    </div><!-- /cbp-hrsub-inner -->
+                                </div><!-- /cbp-hrsub -->
+                            </li>
+                            <li>
+                                <a href="#">Vật Dụng Nhà Bếp</a>
+                                <div class="cbp-hrsub">
+                                    <div class="cbp-hrsub-inner">
+                                        <div>
+                                            <h4>Education &amp; Learning</h4>
+                                            <ul>
+                                                <li><a href="#">Learn Thai</a></li>
+                                                <li><a href="#">Math Genius</a></li>
+                                                <li><a href="#">Chemokid</a></li>
+                                            </ul>
+                                            <h4>Professionals</h4>
+                                            <ul>
+                                                <li><a href="#">Success 1.0</a></li>
+                                                <li><a href="#">Moneymaker</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h4>Entertainment</h4>
+                                            <ul>
+                                                <li><a href="#">Gadget Finder</a></li>
+                                                <li><a href="#">Green Tree Express</a></li>
+                                                <li><a href="#">Green Tree Pro</a></li>
+                                                <li><a href="#">Holy Cannoli</a></li>
+                                                <li><a href="#">Wobbler 3.0</a></li>
+                                                <li><a href="#">Coolkid</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h4>Games</h4>
+                                            <ul>
+                                                <li><a href="#">Catch the Bullet</a></li>
+                                                <li><a href="#">Snoopydoo</a></li>
+                                                <li><a href="#">Fallen Angel</a></li>
+                                                <li><a href="#">Sui Maker</a></li>
+                                                <li><a href="#">Wave Master</a></li>
+                                                <li><a href="#">Golf Pro</a></li>
+                                            </ul>
+                                        </div>
+                                    </div><!-- /cbp-hrsub-inner -->
+                                </div><!-- /cbp-hrsub -->
+                            </li>
+                            <li>
+                                <a href="#">Tủ Lạnh</a>
+                                <div class="cbp-hrsub">
+                                    <div class="cbp-hrsub-inner">
+                                        <div>
+                                            <h4>Learning &amp; Games</h4>
+                                            <ul>
+                                                <li><a href="#">Catch the Bullet</a></li>
+                                                <li><a href="#">Snoopydoo</a></li>
+                                            </ul>
+                                            <h4>Utilities</h4>
+                                            <ul>
+                                                <li><a href="#">Gadget Finder</a></li>
+                                                <li><a href="#">Green Tree Express</a></li>
+                                                <li><a href="#">Green Tree Pro</a></li>
+                                                <li><a href="#">Wobbler 3.0</a></li>
+                                                <li><a href="#">Coolkid</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h4>Education</h4>
+                                            <ul>
+                                                <li><a href="#">Learn Thai</a></li>
+                                                <li><a href="#">Math Genius</a></li>
+                                                <li><a href="#">Chemokid</a></li>
+                                            </ul>
+                                            <h4>Professionals</h4>
+                                            <ul>
+                                                <li><a href="#">Success 1.0</a></li>
+                                                <li><a href="#">Moneymaker</a></li>
+                                            </ul>
+                                        </div>
+                                    </div><!-- /cbp-hrsub-inner -->
+                                </div><!-- /cbp-hrsub -->
+                            </li>
+                            <li>
+                                <a href="#">Máy Giặt</a>
+                                <div class="cbp-hrsub">
+                                    <div class="cbp-hrsub-inner">
+                                        <div>
+                                            <h4>Learning &amp; Games</h4>
+                                            <ul>
+                                                <li><a href="#">Catch the Bullet</a></li>
+                                                <li><a href="#">Snoopydoo</a></li>
+                                                <li><a href="#">Fallen Angel</a></li>
+                                                <li><a href="#">Sui Maker</a></li>
+                                                <li><a href="#">Wave Master</a></li>
+                                                <li><a href="#">Golf Pro</a></li>
+                                            </ul>
+                                            <h4>Utilities</h4>
+                                            <ul>
+                                                <li><a href="#">Gadget Finder</a></li>
+                                                <li><a href="#">Green Tree Express</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h4>Entertainment</h4>
+                                            <ul>
+                                                <li><a href="#">Gadget Finder</a></li>
+                                                <li><a href="#">Green Tree Express</a></li>
+                                                <li><a href="#">Green Tree Pro</a></li>
+                                                <li><a href="#">Holy Cannoli</a></li>
+                                                <li><a href="#">Wobbler 3.0</a></li>
+                                                <li><a href="#">Coolkid</a></li>
+                                            </ul>
+                                        </div>
+                                    </div><!-- /cbp-hrsub-inner -->
+                                </div><!-- /cbp-hrsub -->
+                            </li>
+                            <li>
+                                <a href="#">Máy Lọc Nước</a>
+                                <div class="cbp-hrsub">
+                                    <div class="cbp-hrsub-inner">
+                                        <div>
+                                            <h4>Utilities</h4>
+                                            <ul>
+                                                <li><a href="#">Green Tree Pro</a></li>
+                                                <li><a href="#">Wobbler 3.0</a></li>
+                                                <li><a href="#">Coolkid</a></li>
+                                            </ul>
+                                            <h4>Education</h4>
+                                            <ul>
+                                                <li><a href="#">Learn Thai</a></li>
+                                                <li><a href="#">Math Genius</a></li>
+                                                <li><a href="#">Chemokid</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h4>Professionals</h4>
+                                            <ul>
+                                                <li><a href="#">Success 1.0</a></li>
+                                                <li><a href="#">Moneymaker</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h4>Learning &amp; Games</h4>
+                                            <ul>
+                                                <li><a href="#">Catch the Bullet</a></li>
+                                                <li><a href="#">Snoopydoo</a></li>
+                                                <li><a href="#">Fallen Angel</a></li>
+                                                <li><a href="#">Sui Maker</a></li>
+                                                <li><a href="#">Wave Master</a></li>
+                                                <li><a href="#">Golf Pro</a></li>
+                                            </ul>
+                                        </div>
+                                    </div><!-- /cbp-hrsub-inner -->
+                                </div><!-- /cbp-hrsub -->
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div><!--/header-bottom-->
+</header><!--/header-->
